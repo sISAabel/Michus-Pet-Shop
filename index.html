@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Pacifico&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/2e9cad6e92.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="src/img/icon-top.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/2e9cad6e92.js" crossorigin="anonymous"></script>
   <title>MICHU'S Pet Shop</title>
 </head>
 <body>
@@ -24,9 +24,6 @@
           <p>S-D 9:00 AM a 12:00 M</p>
         </div>
       </div>
-      <div class="shopping_cart">
-        <i class="fas fa-shopping-cart"></i>
-      </div>
     </div>
     <div class="banner">
       <div class="logo">
@@ -36,17 +33,29 @@
           </a>
         </div>
       </div>
-      <nav class="menu">
-        <a href="#">Delivery y Método de Pago</a>
-        <a href="#">Consejos</a>
-        <a href="#">Contacto</a>
-      </nav>
       <div class="search">
         <input type="search" name="search" id="search">
         <i class="fas fa-search"></i>
       </div>
+      <div class="shopping_cart">
+        <i class="fas fa-shopping-cart"></i>
+      </div>
     </div>
   </header>
+  <div class="container">
+    <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    <nav class="menu">
+      <a href="#catalog">Catálogo</a>
+      <a href="#">Delivery y Método de Pago</a>
+      <a href="#">Consejos</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </div>
   <div class="cont">
     <div class="about">
       <div class="gallery">
@@ -118,100 +127,120 @@
       <div class="new-products">
         <h1 class="title">Nuevos Productos</h1>
         <div class="products">
-          <div class="product">
-            <div class="img-product">
-              <img src="src/img/new1.png" alt="new-products">
+          <div class="products-row">
+            <div class="product">
+              <div class="img-product">
+                <img src="src/img/new1.webp" alt="new-products">
+              </div>
+              <div class="info-product">
+                <h2 class="title-product">Mochila de Paseo</h2>
+                <p>14.99$</p>
+              </div>
+              <div class="rating">
+                <span id="rating">
+                  <input type="radio" name="rating1" id="star1">
+                  <label for="star1"><i class="fas fa-paw"></i></label>
+                  <input type="radio" name="rating1" id="star2">
+                  <label for="star2"><i class="fas fa-paw"></i></label>
+                  <input type="radio" name="rating1" id="star3">
+                  <label for="star3"><i class="fas fa-paw"></i></label>
+                  <input type="radio" name="rating1" id="star4">
+                  <label for="star4"><i class="fas fa-paw"></i></label>
+                  <input type="radio" name="rating1" id="star5">
+                  <label for="star5"><i class="fas fa-paw"></i></label>
+                </span>
+              </div>
+              <div class="button">
+                <a href="#">
+                  <button class="btn-grad">Ver Producto</button>
+                </a>
+              </div>
             </div>
-            <div class="info-product">
-              <h2 class="title-product">Tienda de camping</h2>
-              <p>15€</p>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, doloribus.</p>
-            </div>
-            <div class="rating">
-              <span id="rating">
-                <input type="radio" name="rating1" id="star1">
-                <label for="star1"><i class="fas fa-paw"></i></label>
-                <input type="radio" name="rating1" id="star2">
-                <label for="star2"><i class="fas fa-paw"></i></label>
-                <input type="radio" name="rating1" id="star3">
-                <label for="star3"><i class="fas fa-paw"></i></label>
-                <input type="radio" name="rating1" id="star4">
-                <label for="star4"><i class="fas fa-paw"></i></label>
-                <input type="radio" name="rating1" id="star5">
-                <label for="star5"><i class="fas fa-paw"></i></label>
-              </span>
-            </div>
-          </div>
-          <div class="product">
-            <div class="img-product">
-              <img src="src/img/new2.png" alt="new-products">
-            </div>
-            <div class="info-product">
-              <h2 class="title-product">Fuente de Agua </h2>
-              <p>30€</p>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, doloribus.</p>
-            </div>
-            <div class="rating">
-              <span id="rating">
-                <input type="radio" name="rating2" id="star6">
-                <label for="star6"><i class="fas fa-paw"></i></label>
-                <input type="radio" name="rating2" id="star7">
-                <label for="star7"><i class="fas fa-paw"></i></label>
-                <input type="radio" name="rating2" id="star8">
-                <label for="star8"><i class="fas fa-paw"></i></label>
-                <input type="radio" name="rating2" id="star9">
-                <label for="star9"><i class="fas fa-paw"></i></label>
-                <input type="radio" name="rating2" id="star10">
-                <label for="star10"><i class="fas fa-paw"></i></label>
-              </span>
-            </div>
-          </div>
-          <div class="product">
-            <div class="img-product">
-              <img src="src/img/new3.png" alt="new-products">
-            </div>
-            <div class="info-product">
-              <h2 class="title-product">Dispensador Inteligente</h2>
-              <p>50€</p>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, doloribus.</p>
-            </div>
-            <div class="rating">
-              <span id="rating">
-                <input type="radio" name="rating3" id="star11">
-                <label for="star11"><i class="fas fa-paw"></i></label>
-                <input type="radio" name="rating3" id="star12">
-                <label for="star12"><i class="fas fa-paw"></i></label>
-                <input type="radio" name="rating3" id="star13">
-                <label for="star13"><i class="fas fa-paw"></i></label>
-                <input type="radio" name="rating3" id="star14">
-                <label for="star14"><i class="fas fa-paw"></i></label>
-                <input type="radio" name="rating3" id="star15">
-                <label for="star15"><i class="fas fa-paw"></i></label>
-              </span>
+            <div class="product">
+              <div class="img-product">
+                <img src="src/img/new2.png" alt="new-products">
+              </div>
+              <div class="info-product">
+                <h2 class="title-product">Árbol Rascador</h2>
+                <p>30.99$</p>
+              </div>
+              <div class="rating">
+                <span id="rating">
+                  <input type="radio" name="rating2" id="star6">
+                  <label for="star6"><i class="fas fa-paw"></i></label>
+                  <input type="radio" name="rating2" id="star7">
+                  <label for="star7"><i class="fas fa-paw"></i></label>
+                  <input type="radio" name="rating2" id="star8">
+                  <label for="star8"><i class="fas fa-paw"></i></label>
+                  <input type="radio" name="rating2" id="star9">
+                  <label for="star9"><i class="fas fa-paw"></i></label>
+                  <input type="radio" name="rating2" id="star10">
+                  <label for="star10"><i class="fas fa-paw"></i></label>
+                </span>
+              </div>
+              <div class="button">
+                <a href="#">
+                  <button class="btn-grad">Ver Producto</button>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="product">
-            <div class="img-product">
-              <img src="src/img/new4.png" alt="new-products">
+          <div class="products-row">
+            <div class="product">
+              <div class="img-product">
+                <img src="src/img/new3.png" alt="new-products">
+              </div>
+              <div class="info-product">
+                <h2 class="title-product">Dispensador Inteligente</h2>
+                <p>85.00$</p>
+              </div>
+              <div class="rating">
+                <span id="rating">
+                  <input type="radio" name="rating3" id="star11">
+                  <label for="star11"><i class="fas fa-paw"></i></label>
+                  <input type="radio" name="rating3" id="star12">
+                  <label for="star12"><i class="fas fa-paw"></i></label>
+                  <input type="radio" name="rating3" id="star13">
+                  <label for="star13"><i class="fas fa-paw"></i></label>
+                  <input type="radio" name="rating3" id="star14">
+                  <label for="star14"><i class="fas fa-paw"></i></label>
+                  <input type="radio" name="rating3" id="star15">
+                  <label for="star15"><i class="fas fa-paw"></i></label>
+                </span>
+              </div>
+              <div class="button">
+                <a href="#">
+                  <button class="btn-grad">Ver Producto</button>
+                </a>
+              </div>
             </div>
-            <div class="info-product">
-              <h2 class="title-product">Trasportin</h2>
-              <p>65€</p>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, doloribus.</p>
-            </div>
-            <div class="rating">
-              <span id="rating">
-                <input type="radio" name="rating4" id="star16">
-                <label for="star16"><i class="fas fa-paw"></i></label>
-                <input type="radio" name="rating4" id="star17">
-                <label for="star17"><i class="fas fa-paw"></i></label>
-                <input type="radio" name="rating4" id="star18">
-                <label for="star18"><i class="fas fa-paw"></i></label>
-                <input type="radio" name="rating4" id="star19">
-                <label for="star19"><i class="fas fa-paw"></i></label>
-                <input type="radio" name="rating4" id="star20">
-                <label for="star20"><i class="fas fa-paw"></i></label>
-              </span>
+            <div class="product">
+              <div class="img-product">
+                <img src="src/img/new4.png" alt="new-products">
+              </div>
+              <div class="info-product">
+                <h2 class="title-product">Trasportin</h2>
+                <p>60.50$</p>
+              </div>
+              <div class="rating">
+                <span id="rating">
+                  <input type="radio" name="rating4" id="star16">
+                  <label for="star16"><i class="fas fa-paw"></i></label>
+                  <input type="radio" name="rating4" id="star17">
+                  <label for="star17"><i class="fas fa-paw"></i></label>
+                  <input type="radio" name="rating4" id="star18">
+                  <label for="star18"><i class="fas fa-paw"></i></label>
+                  <input type="radio" name="rating4" id="star19">
+                  <label for="star19"><i class="fas fa-paw"></i></label>
+                  <input type="radio" name="rating4" id="star20">
+                  <label for="star20"><i class="fas fa-paw"></i></label>
+                </span>
+              </div>
+              <div class="button">
+                <a href="#">
+                  <button class="btn-grad">Ver Producto</button>
+                </a>
+              </div>
             </div>
           </div>
         </div>

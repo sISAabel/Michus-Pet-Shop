@@ -49,7 +49,7 @@ header {
   flex-direction: column;
 }
 .banner-top {
-  padding: 0.3em 1em;
+  padding: 0.3em;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -71,11 +71,10 @@ header {
   align-items: center;
   align-content: center;
   gap: 1em;
+  border-bottom: var(--sky) solid 2px;
 }
 .logo {
   width: 20%;
-  display: flex;
-  justify-content: center;
 }
 .logo:hover {
   transform: scale(1.1);
@@ -84,10 +83,33 @@ header {
 .logo-img {
   width: 50%;
 }
-.menu {
+.search {
+  background-color: var(--grey);
+  border-radius: 1em;
+  padding: 0.5em;
   width: 50%;
+  margin-left: -3em;
+}
+.search input[type="search"] {
+  border-radius: 1em;
+  background-color: var(--grey);
+  border: none;
+  height: 5vh;
+  width: 90%;
+}
+.search i {
+  color: var(--purple);
+}
+.hamburguer {
+  display: none;
+}
+.menu {
+  width: 100%;
+  padding: 1em;
+  height: 12vh;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   gap: 1em;
 }
 .menu a {
@@ -98,20 +120,7 @@ header {
   color: var(--yellow);
   border-bottom: var(--yellow) 0.3em solid;
 }
-.search {
-  background-color: var(--grey);
-  border-radius: 1em;
-  padding: 0.5em;
-}
-.search input[type="search"] {
-  border-radius: 1em;
-  background-color: var(--grey);
-  border: none;
-  height: 5vh;
-}
-.search i {
-  color: var(--yellow);
-}
+
 .cont {
   width: 100%;
   background-color: var(--grey);
@@ -169,15 +178,16 @@ header {
 }
 .back {
   transform: translateZ(-150px) rotateX(180deg);
-  background-image: url(../img/cube3.png);
+  background-image: url(../img/cube5.png);
 }
 .left {
   transform: translateX(-150px) rotateY(90deg);
-  background-image: url(../img/cube4.png);
+  background-image: url(../img/cube3.png);
+
 }
 .right {
   transform: translateX(150px) rotateY(90deg);
-  background-image: url(../img/cube5.png);
+  background-image: url(../img/cube4.png);
 }
 .top {
   transform: translateY(-150px) rotateX(90deg);
@@ -230,8 +240,9 @@ header {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
-.catalog {
+#catalog {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -309,6 +320,15 @@ header {
   justify-content: space-around;
   align-content: center;
   align-items: center;
+  width: 100%;
+  gap: 1em;
+}
+.products-row {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  width: 50%;
   gap: 1em;
 }
 .product {
@@ -317,11 +337,15 @@ header {
   justify-content: center;
   align-content: center;
   align-items: center;
-  width: 22%;
-  font-size: 1em;
+  width: 50%;
+  height: 100vh;
   text-align: center;
   box-shadow: 0px -1px 10px -1px rgba(0, 0, 0, 0.75);
-  padding: 2em;
+  padding: 1em;
+  gap: 1em;
+}
+.info-product {
+  width: 100%;
 }
 .title-product {
   color: var(--sky);
@@ -335,6 +359,7 @@ header {
 }
 .rating label {
   color: grey;
+  font-size: 1.5em;
 }
 .rating label:hover,
 .rating label:hover ~ label {
@@ -342,6 +367,31 @@ header {
 }
 .rating input[type="radio"]:checked ~ label {
   color: var(--yellow);
+}
+.button {
+  width: 80%;
+}
+.button a {
+  color: var(--white);
+  text-decoration: none;
+}
+.btn-grad {
+  background-image: linear-gradient(to right, var(--purple) 0%, var(--sky) 51%, var(--purple) 100%)
+}
+.btn-grad {
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: var(--white);
+  border-radius: 10px;
+  display: block;
+}
+.btn-grad:hover {
+  background-position: right center;
+  color: var(--white);
+  text-decoration: none;
 }
 footer {
   width: 100%;
@@ -363,11 +413,26 @@ footer {
   color: var(--yellow);
   font-size: 2em;
 }
+.social-bar a:hover {
+  color: var(--purple);
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 .copyright {
   text-align: center;
-  color: var(--sky)
+  color: var(--sky);
 }
 .logo-footer {
   width: 10%;
   margin-right: 1.5em;
+}
+@media (max-width:860px) {
+  .products {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  .products-row {
+    width: 90%;
+  }
 }
