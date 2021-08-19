@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Pacifico&display=swap');
+*, *::after, *::after {
+  box-sizing: border-box;
+}
+:root {
+  --sky: #00d4d7;
+  --yellow: #fed116;
+  --purple: #a81e7e;
+  --white: #f5f5f5;
+  --grey: #f0f0f0;
+  --blue: #004b4d;
+  --fontCont: 'Libre Baskerville', serif;
+  --fontTitle: 'Pacifico', cursive;
+}
+html {
+  font-size: 16px;
+  font-family: var(--fontCont);
+}
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+img {
+  width: 100%;
+}
+.title {
+  font-family: var(--fontTitle);
+  font-weight: lighter;
+  color: var(--purple);
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+.subtitle {
+  font-family: var(--fontTitle);
+  font-weight: lighter;
+  text-align: center;
+  font-size: 1.5em;
+  color: var(--grey);
+  margin: 0;
+}
+header {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.top {
+  padding: 0.3em 1em;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--sky);
+  color: var(--white);
+}
+.address, .timetable, .info-shop {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 0.8em;
+}
+.banner {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  gap: 1em;
+}
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+.logo:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.logo-img {
+  width: 50%;
+}
+.menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  gap: 1em;
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+.menu a:hover {
+  color: var(--yellow);
+  border-bottom: var(--yellow) 0.3em solid;
+}
+.search {
+  background-color: var(--grey);
+  border-radius: 1em;
+  padding: 0.5em;
+}
+.search input[type="search"] {
+  border-radius: 1em;
+  background-color: var(--grey);
+  border: none;
+  height: 5vh;
+}
+.search i {
+  color: var(--yellow);
+}
+.cont {
+  width: 100%;
+  background-color: var(--grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 1em;
+}
+.about {
+  background-image: url(../img/bg.png);
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 1em;
+  gap: 1em;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.gallery-controls {
+  width: 10%;
+}
+.gallery-img {
+  width: 50%;
+}
+.gallery-img img {
+  border-radius: 1em;
+  box-shadow: 7px 5px 19px -7px rgba(0, 0, 0, 0.75);
+}
+.info-about {
+  padding: 1em;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.0px);
+  -webkit-backdrop-filter: blur(8.0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.catalog {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.categories {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+}
+.categories-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.category {
+  width: 12em;
+  height: 12em;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+}
+.category:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+#dog {
+  background-color: var(--purple);
+}
+#cat {
+  background-color: var(--yellow);
+}
+#accs {
+  background-color: var(--sky);
+}
+#shower {
+  background-color: #ff1493;
+}
+#health {
+  background-color: rgb(141, 255, 47);
+}
+.category a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 0;
+  padding: 0;
+  margin: 0;
+}
+.category-img {
+  width: 60%;
+  padding: 0;
+}
