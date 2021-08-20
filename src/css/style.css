@@ -544,10 +544,6 @@ footer {
     justify-content: space-around;
   }
 
-  .logo {
-    display: none;
-  }
-
   .menu-options {
     justify-content: flex-start;
   }
