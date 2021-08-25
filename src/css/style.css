@@ -2,7 +2,7 @@
 
 *,
 *::after,
-*::after {
+*::before {
   box-sizing: border-box;
 }
 
@@ -139,22 +139,26 @@ header {
 }
 
 .menu-box {
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  align-content: center;
   list-style-type: none;
-  padding: 1em;
-  gap: 1em;
 }
 
+.menu-box li {
+  width: 20%;
+  padding: 0.8em;
+  text-align: center;
+}
 .menu-box li a {
   color: black;
   text-decoration: none;
 }
 
-.menu-box li a:hover {
-  color: var(--yellow);
-  border-bottom: var(--yellow) 0.3em solid;
+.menu-box li:hover {
+  background-color: var(--yellow);
 }
 
 .selector {
@@ -479,10 +483,7 @@ header {
 }
 
 .btn-grad {
-  background-image: linear-gradient(to right, var(--purple) 0%, var(--sky) 51%, var(--purple) 100%)
-}
-
-.btn-grad {
+  background-image: linear-gradient(to right, var(--purple) 0%, var(--sky) 51%, var(--purple) 100%);
   width: 100%;
   padding: 1em;
   text-align: center;
@@ -491,6 +492,8 @@ header {
   color: var(--white);
   border-radius: 10px;
   display: block;
+  font-family: var(--fontCont);
+  font-size: 1em;
 }
 
 .btn-grad:hover {
@@ -539,6 +542,75 @@ footer {
   margin-right: 1.5em;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------TIPS----*/
+
+.tips {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1.5em;
+  background-image: url(../img/bg.png);
+  background-size: contain;
+}
+
+.tip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1em;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 1.5em;
+  width: 90%;
+}
+
+.tip-img {
+  width: 30%;
+}
+
+.tip-info {
+  width: 70%;
+  text-align: justify;
+}
+
+.tip-info ul {
+  list-style-type: none;
+}
+
 /*------CONTACTO----*/
 
 #contact {
@@ -548,6 +620,7 @@ footer {
   flex-direction: column;
   align-items: center;
   background-image: url(../img/bg.png);
+  background-size: contain;
   background-color: var(--grey);
   padding-bottom: 3em;
 }
@@ -576,7 +649,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 1em;
-  background: rgba(168, 30, 127, 0.466);
+  background: rgba(168, 30, 127, 0.521);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(3.5px);
   -webkit-backdrop-filter: blur(3.5px);
@@ -592,9 +665,7 @@ footer {
   background: rgba(168, 30, 127, 0.521);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(3.5px);
-  -webkit-backdrop-filter: blur(3.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px 0 0 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -603,6 +674,9 @@ footer {
   align-content: center;
   padding: 1em;
   height: 100%;
+  border-top: 3px solid var(--yellow);
+  border-left: 3px solid var(--yellow);
+  border-bottom: 3px solid var(--yellow);
 }
 
 .company-info h3,
@@ -614,9 +688,10 @@ footer {
   background: rgba(0, 211, 215, 0.541);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(3.5px);
-  -webkit-backdrop-filter: blur(3.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 0px 10px 10px 0;
+  border-top: 3px solid var(--yellow);
+  border-right: 3px solid var(--yellow);
+  border-bottom: 3px solid var(--yellow);
 }
 
 .contact form {
@@ -645,7 +720,9 @@ footer {
   border-radius: 20px;
   background: transparent;
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 400;
+  border: 2px solid var(--yellow);
+  font-family: var(--fontCont);
 }
 
 .contact form input:hover,
@@ -704,7 +781,7 @@ form textarea:active {
     position: fixed;
     width: 40%;
     height: 100vh;
-    top: 40vh;
+    top: 25vh;
     left: -100%;
     text-align: left;
     transition: all .8s;
@@ -760,6 +837,10 @@ form textarea:active {
   .full {
     width: 90%;
   }
+
+  .tip {
+    flex-direction: column;
+  }
 }
 
 @media (max-width:650px) {
@@ -796,7 +877,7 @@ form textarea:active {
   }
 
   .menu-box {
-    top: 50vh;
+    top: 30vh;
     width: 60%;
   }
 
