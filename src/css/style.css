@@ -382,7 +382,7 @@ header {
 }
 
 #health {
-  background-color: rgb(141, 255, 47);
+  background-color: #8dff2f;
 }
 
 .category a {
@@ -567,7 +567,99 @@ footer {
 
 
 
+/*----DELIVERY Y PAGO----*/
 
+.pays {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.pays p {
+  width: 80%;
+  margin-bottom: 5em;
+  text-align: justify;
+}
+
+.payments-methods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.payments-row {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  gap: 1em;
+}
+
+.payments-cont {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.pay {
+  height: 10em;
+  width: 10em;
+  padding: 1.5em;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  border-radius: 50%;
+  box-shadow: 0px 8px 33px -9px rgba(0, 0, 0, 0.75);
+}
+
+#dollar, #mercantil {
+  background-color: var(--sky);
+}
+
+#paypal, #pago-movil {
+  background-color: var(--yellow);
+}
+
+#airtm {
+  background-color: var(--purple);
+}
+
+#mony, #zelle {
+  background-color: #8dff2f;
+}
+
+.delivery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.delivery-table,
+.delivery-table tr,
+.delivery-table th,
+.delivery-table td {
+  border: solid var(--purple) 3px;
+  border-collapse: collapse;
+  padding: 1em;
+  text-align: center;
+}
+
+.delivery-table th {
+  background-color: var(--yellow);
+}
+
+.delivery-table td {
+  background-color: var(--sky);
+}
 
 /*------TIPS----*/
 
@@ -600,6 +692,9 @@ footer {
 
 .tip-img {
   width: 30%;
+}
+.tip-img img {
+  border-radius: 10px;
 }
 
 .tip-info {
@@ -839,6 +934,10 @@ form textarea:active {
   }
 
   .tip {
+    flex-direction: column;
+  }
+
+  .payments-row {
     flex-direction: column;
   }
 }
