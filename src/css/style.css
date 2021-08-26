@@ -564,6 +564,7 @@ footer {
   gap: 1em;
   padding-bottom: 3em;
   border-bottom: var(--blue) 1px solid;
+  margin-bottom: 2em;
 }
 
 .catalog-cont {
@@ -582,10 +583,61 @@ footer {
   align-items: center;
   align-content: center;
   justify-content: center;
-  background-color: var(--purple);
   height: 90vh;
   width: 50%;
   border-radius: 10px;
+}
+
+.catalog-category {
+  font-size: 0.8em;
+  width: 15%;
+}
+
+.dog {
+  background-color: var(--purple);
+}
+
+.cat {
+  background-color: var(--yellow);
+}
+
+.accessories {
+  background-color: var(--sky);
+}
+
+.shower {
+  background-color: #ff1493;
+}
+
+.health {
+  background-color: #8dff2f;
+}
+
+.title-dog {
+  color: var(--purple);
+}
+
+.title-cat {
+  color: var(--yellow);
+}
+
+.title-accessories {
+  color: var(--sky);
+}
+
+.title-shower {
+  color: #ff1493;
+}
+
+.title-health {
+  color: #8dff2f;
+}
+
+.cat .card-info,
+.info-cat,
+.accessories .card-info,
+.health .card-info {
+  color: var(--blue);
 }
 
 .card-info {
