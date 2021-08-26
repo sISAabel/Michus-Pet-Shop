@@ -1077,6 +1077,10 @@ form textarea:active {
     flex-direction: column;
   }
 
+  .tip-img {
+    width: 80%;
+  }
+
   .payments-row {
     flex-direction: column;
   }
@@ -1127,6 +1131,10 @@ form textarea:active {
   .catalog-card {
     height: 90%;
     width: 100%;
+  }
+
+  .tip-img {
+    width: 80%;
   }
 }
 
